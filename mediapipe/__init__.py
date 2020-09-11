@@ -13,6 +13,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 
-import mediapipe.examples.python as examples
-from mediapipe.python import *
-import mediapipe.util as util
+# import mediapipe.examples.python as examples
+# from mediapipe.python import *
+# import mediapipe.util as util

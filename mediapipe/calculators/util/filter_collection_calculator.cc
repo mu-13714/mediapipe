@@ -36,4 +36,11 @@ typedef FilterCollectionCalculator<std::vector<::mediapipe::ClassificationList>>
     FilterClassificationListCollectionCalculator;
 REGISTER_CALCULATOR(FilterClassificationListCollectionCalculator);
 
+typedef FilterCollectionCalculator<std::vector<::mediapipe::LandmarkList>>
+    FilterLandmarkRawListCollectionCalculator;
+REGISTER_CALCULATOR(FilterLandmarkRawListCollectionCalculator);
+
+typedef FilterCollectionCalculator<std::vector<float>> FilterFloatCollectionCalculator;
+REGISTER_CALCULATOR(FilterFloatCollectionCalculator);
+
 }  // namespace mediapipe

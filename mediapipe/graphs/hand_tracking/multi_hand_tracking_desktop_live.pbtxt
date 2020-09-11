@@ -6,6 +6,13 @@
 # Images coming into and out of the graph.
 input_stream: "input_video"
 output_stream: "output_video"
+output_stream: "DETECTIONS:multi_palm_detections"
+output_stream: "LANDMRKS:multi_hand_landmarks"
+output_stream: "PALMRECTS:multi_palm_rects"
+output_stream: "HANDRECTS:multi_hand_rects"
+output_stream: "LANDMARKS_RAW:multi_hand_landmarks_raw"
+output_stream: "HANDEDNESS:handedness"
+output_stream: "PRESENCE_SCORE:multi_hand_presence_score"
 
 # Determines if an input vector of NormalizedRect has a size greater than or
 # equal to the provided min_size.
@@ -55,6 +62,9 @@ node {
   input_stream: "NORM_RECTS:multi_hand_rects"
   output_stream: "LANDMARKS:multi_hand_landmarks"
   output_stream: "NORM_RECTS:multi_hand_rects_from_landmarks"
+  output_stream: "LANDMARKS_RAW:multi_hand_landmarks_raw"
+  output_stream: "HANDEDNESS:handedness"
+  output_stream: "PRESENCE_SCORE:multi_hand_presence_score"
 }
 
 # Caches a hand rectangle fed back from MultiHandLandmarkSubgraph, and upon the
