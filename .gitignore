@@ -4,3 +4,4 @@ mediapipe/MediaPipe.tulsiproj/*.tulsiconf-user
 mediapipe/provisioning_profile.mobileprovision
 result/
 __pycache__
+/input_video_path.txt

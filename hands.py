@@ -46,7 +46,8 @@ def doMultiHandTracking(inputVideoPath):
 
 if __name__=="__main__":
     if len(sys.argv) > 1:
-        inputVideoPaths = [sys.argv[1]]
+        with open(sys.argv[1]) as f:
+            inputVideoPaths = [s.strip() for s in f.readlines()]
     else:
         inputVideoPaths = INPUTVIDEOPATHS
 
